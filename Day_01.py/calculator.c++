@@ -14,22 +14,20 @@ int mul_fun(int a,int b){
     return(mul);
 }
 int div_fun(int a, int b){
-    if (b==0){
-        return(0);
-    }
-    else{
-        return(double) a/b ;
-    }
+    return (double)a/b ;
 }
+
 int main()
 {
-
+    while (true) 
+    {
     int choice ;
     cout<<"ADDTION\n";
     cout<<"SUBSTRACT\n";
     cout<<"MULTIPLY\n";
     cout<<"DIVISION\n";
-    cout<<"Enter your choice(1-4): "<<endl;
+    cout<<"EXIT\n";
+    cout<<"Enter your choice(1-5): "<<endl;
     cin>>choice;
     
     int a,b;
@@ -49,10 +47,23 @@ int main()
         cout << "Result: " << mul_fun(a, b) << endl;
     }
     else if(choice == 4){
-         cout << "Result: " << div_fun(a, b) << endl;    }
+        if (b == 0){
+            cout<<"Error b can't be zero\n";
+        }
+         else  {
+         cout << "Result: " << div_fun(a, b) << endl;   
+         }
+        
+        }
+    else if(choice == 5){
+        cout<<"program EXIT!!!";
+        break;
+         }
     else {
         cout<<"Invalid choice" ;
     }
-    return 0;
+    
 
+}
+return 0;
 }
