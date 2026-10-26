@@ -28,7 +28,7 @@ int main()
     cout<<"DIVISION\n";
     cout<<"EXIT\n";
     cout<<"Enter your choice(1-5): "<<endl;
-    cin>>choice;
+    cin>>choice; 
     
     int a,b;
     cout<<"Enter first number :"<<endl;
