@@ -16,31 +16,30 @@ using namespace std;
 
 // multiple inheritance
 
-class father {
+class father{
     public:
-    string name;
     void money(){
-        cout<<"Father gave money to "<< name <<endl;
+        cout<<"Father gives home"<<endl;
+
     }
 };
 class mother{
     public:
-    string name;
     void love(){
-        cout<<"Mother give love to "<< name <<endl;
+        cout<<"Mother gives love"<<endl;
     }
 };
-class child :public father,public mother{
+class chlid :public father,public mother{
     public:
     void play(){
-        cout<<name<<" play every day"<<endl;
+        cout<<"Child plays circket"<<endl;
     }
 };
+
 int main(){
-    child C1;
-    C1.name = "akash";
-    C1.money();
-    C1.love();
-    C1.play();
+    chlid c1;
+    c1.money();
+    c1.love();
+    c1.play();
     return 0;
 }
