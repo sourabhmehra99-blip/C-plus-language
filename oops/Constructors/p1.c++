@@ -7,35 +7,35 @@
 #include <iostream>
 using namespace std;    
 
-// class student{
-//     public:
-//     // default constructor
-//         student(){
-//             cout<<"default constructor called"<<endl;
-//         }
-// };
-// int main(){
-//     student s1;
-//     student s2;
-//     return 0;
-// }
+class student{
+    public:
+    // default constructor
+        student(){
+            cout<<"default constructor called"<<endl;
+        }
+};
+int main(){
+    student s1;
+    student s2;
+    return 0;
+}
 
 // parameterized constructor
 // A parameterized constructor is a constructor that takes parameters to initialize an object of a class.
 
-// class student{
-//     public:
-//         // parameterized constructor
-//         student(int age)
-//         {
-//             cout<<"student age is :"<<age<<endl;
-//         }
-// };
-// int main(){
-//     student s1(20);
-//     student s2(22);
-//     return 0;
-// }
+class student{
+    public:
+        // parameterized constructor
+        student(int age)
+        {
+            cout<<"student age is :"<<age<<endl;
+        }
+};
+int main(){
+    student s1(20);
+    student s2(22);
+    return 0;
+}
 
 // copy constuctor
 // A copy constructor is a constructor that creates a new object as a copy of an existing object.
