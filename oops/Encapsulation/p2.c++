@@ -17,4 +17,4 @@ int main(){
     student s3;
     cout<<"number of students: "<<student::count<<endl;  //accessing static data member using class name
     return 0;
-}
+} 
