@@ -5,6 +5,7 @@
 
 #include<iostream>
 using namespace std;
+
 void partA() {
     int arr[] = {10, 20, 30, 40, 50};
     int n = 4;
@@ -38,3 +39,36 @@ int main(){
 // 20
 // 10
 
+// b) Program in C/C++ to declare an integer array &amp; display 10 elements, value taken by user.
+
+
+int main(){
+    int i,n=9;
+    int arr[10];
+    cout<<"Enter 10 numbers: "<<endl;
+    for (i=0;i<=n;i++){
+
+        cin>>arr[i];
+    }
+    
+    cout<<"Array of 10 elements are: "<<endl;
+    for (i=0;i<=n;i++){
+        
+        cout<<arr[i]<<endl;
+    }
+    return 0;
+}
+
+// Enter 10 numbers: 
+// 22 33 33 44 55 6 7 8 10 11
+// Array of 10 elements are: 
+// 22
+// 33
+// 33
+// 44
+// 55
+// 6
+// 7
+// 8
+// 10
+// 11
