@@ -25,3 +25,18 @@ int main(){
     cout<<"the smallest number is: "<<arr[0]<<endl;
    
 }
+
+int main(){
+    int arr[5],i,temp=0;
+    cout<<"Enter the 5 number: ";
+    for(i=0;i<5;i++){
+        cin>>arr[i];
+    }
+    for(i=0;i<5;i++){
+        temp +=arr[i];
+    }
+    cout<<"The sum of the numbers is: "<<temp<<endl;
+    float average = temp/5;
+    cout<<"The average of the numbers is: "<<average<<endl;
+    return 0;
+}
